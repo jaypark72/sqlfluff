@@ -17,3 +17,14 @@
   types: [sql]
   require_serial: true
   additional_dependencies: []
+
+- id: diff-quality
+  name: diff-quality
+  # Needs to use "--force" to disable confirmation
+  # By default all the rules are applied
+  entry: diff-quality --violations sqlfluff
+  language: python
+  description: 'Lint sql files with `SQLFluff`'
+  types: [sql]
+  require_serial: true
+  additional_dependencies: []
