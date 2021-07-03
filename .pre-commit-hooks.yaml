@@ -22,7 +22,7 @@
   name: diff-quality
   # Needs to use "--force" to disable confirmation
   # By default all the rules are applied
-  entry: diff-quality --violations sqlfluff
+  entry: diff-quality --violations=sqlfluff --fail-under=90
   language: python
   description: 'Lint sql files with `SQLFluff`'
   types: [sql]
