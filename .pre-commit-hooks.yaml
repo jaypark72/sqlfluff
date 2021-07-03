@@ -28,3 +28,4 @@
   types: [sql]
   require_serial: true
   additional_dependencies: []
+  verbose: true
